@@ -15,4 +15,4 @@ Owner - Bluechamele0n
 
 <br>
 
-DC-Friend - Jojosoh
+Our Hasse - Jojosoh
