@@ -3,15 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//MainMenuUI class
 public class MainMenu_UI : MonoBehaviour
 {
-    public void PlayGame ()
+    //Define SceneToLoad
+    public int StartButtonScene = 2;
+
+    //Play Gam
+    public void StartGame ()
     {
-        SceneManager.LoadScene(1);
+        //Load scene
+        SceneManager.LoadScene(StartButtonScene);
     }
 
+    //QuitGame
     public void QuitGame ()
     {
+        //Exit game
         Application.Quit();
     }
 }
