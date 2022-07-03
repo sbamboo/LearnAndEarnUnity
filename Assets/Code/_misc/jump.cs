@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,33 +9,15 @@ public class PlayerController : MonoBehaviour
     private float direction = 0f;
     private Rigidbody2D player;
 
-<<<<<<< Updated upstream:Assets/Code/_misc/OLD_PlayerMovement.cs
-    public float jumpHeight = 10f;
-
-    public Rigidbody2D rb;
-
-    Vector2 movement;
-=======
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
     }
->>>>>>> Stashed changes:Assets/Code/_misc/PlayerMovement.cs
 
     // Update is called once per frame
-    void fixedUpdate()
+    void Update()
     {
-<<<<<<< Updated upstream:Assets/Code/_misc/OLD_PlayerMovement.cs
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = rb.position.y;
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            movement.y = movement.y + 10;
-        }
-    }
-=======
         direction = Input.GetAxis("Horizontal");
 
         if (direction > 0f)
@@ -50,7 +32,6 @@ public class PlayerController : MonoBehaviour
         {
             player.velocity = new Vector2(0, player.velocity.y);
         }
->>>>>>> Stashed changes:Assets/Code/_misc/PlayerMovement.cs
 
         if (Input.GetButtonDown("Jump"))
         {
