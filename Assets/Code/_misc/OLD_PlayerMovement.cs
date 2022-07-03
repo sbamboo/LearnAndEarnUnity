@@ -7,24 +7,22 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
+    public float jumpHeight = 10f;
+
     public Rigidbody2D rb;
-    public Animator animator;
 
     Vector2 movement;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("escape"))
-        {
-            SaveSystem.SavePlayer(this);
-        }
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.y = rb.position.y;
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("speed", movement.sqrMagnitude);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            movement.y = movement.y + 10;
+        }
     }
 
     void FixedUpdate()

@@ -409,7 +409,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1666413847}
         m_TargetAssemblyTypeName: MainMenu_UI, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.32858673, g: 0.9811321, b: 0.4442304, a: 1}
+  m_Color: {r: 0.53333336, g: 0.047058824, b: 0.49019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1102,7 +1102,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &2014084905
 MonoBehaviour:
   m_ObjectHideFlags: 0
